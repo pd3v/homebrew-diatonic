@@ -6,6 +6,6 @@ class Diatonic < Formula
   license "GPL-3.0"
 
   def install
-    bin.install "diatonic_demo"
+    # bin.install "diatonic_demo"
   end
 end

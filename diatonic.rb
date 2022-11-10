@@ -8,7 +8,7 @@ class Diatonic < Formula
   depends_on "cmake" => :build
 
   def install
-    bin.install "diatonic_demo"
+    # bin.install "diatonic_demo"
 
     system "mkdir build","cd build"
     system "cmake", ".", *std_cmake_args

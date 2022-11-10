@@ -10,10 +10,11 @@ class Diatonic < Formula
   def install
     bin.install "diatonic_demo"
 
+    system "mkdir build","cd build"
     system "cmake", ".", *std_cmake_args
-    system "make", "install"
+    system "make", ".." #"install"
   end
-  
+
   test do
     system "false"
   end

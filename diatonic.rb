@@ -12,8 +12,8 @@ class Diatonic < Formula
 
     system "mkdir build"
     system "cd build"
-    system "cmake", ".", *std_cmake_args
-    system "make", ".." #"install"
+    system "cmake", "..", *std_cmake_args
+    system "make" #, ".." #"install"
   end
 
   test do
